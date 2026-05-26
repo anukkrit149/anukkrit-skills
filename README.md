@@ -28,7 +28,7 @@ anukkrit-skills/
 In Claude Code or Cowork:
 
 ```
-/plugin marketplace add <your-git-url>
+/plugin marketplace add git@github.com:anukkrit149/anukkrit-skills.git
 /plugin install anukkrit-skills-cowork@anukkrit-skills    # for Cowork
 /plugin install anukkrit-skills-cloud@anukkrit-skills     # for cloud sandbox
 ```
