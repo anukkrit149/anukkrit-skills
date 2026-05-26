@@ -1,0 +1,366 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "lastUpdated": "2026-05-11",
+  "source": "https://storybook.js.org/addons",
+  "categories": {
+    "data-state": {
+      "url": "https://storybook.js.org/addons/tag/data-state",
+      "description": "Mock APIs, network requests, time, contexts, and state",
+      "addons": [
+        {
+          "name": "Mock Service Worker",
+          "package": "msw-storybook-addon",
+          "useCase": "Mock HTTP fetch/XHR (recommended default)",
+          "official": false,
+          "priority": "essential"
+        },
+        {
+          "name": "Mock fetch()",
+          "package": "storybook-addon-fetch-mock",
+          "useCase": "Mock fetch only (lighter than MSW)",
+          "priority": "alternative"
+        },
+        {
+          "name": "Mock API Request",
+          "package": "storybook-addon-mock",
+          "useCase": "Mock arbitrary API responses",
+          "priority": "alternative"
+        },
+        {
+          "name": "Mocking Date",
+          "package": "storybook-addon-mock-date",
+          "useCase": "Freeze JS Date per story (test relative timestamps)",
+          "priority": "niche"
+        },
+        {
+          "name": "Apollo Client",
+          "package": "storybook-addon-apollo-client",
+          "useCase": "Mock Apollo GraphQL queries",
+          "priority": "stack-specific"
+        },
+        {
+          "name": "urql",
+          "package": "@urql/storybook-addon",
+          "useCase": "Mock urql GraphQL queries",
+          "priority": "stack-specific"
+        },
+        {
+          "name": "storybook-react-context",
+          "package": "storybook-react-context",
+          "useCase": "Manipulate React Context from outside components",
+          "priority": "niche"
+        },
+        {
+          "name": "Next.js router",
+          "package": "storybook-addon-next-router",
+          "useCase": "Mock Next.js router (App Router + Pages Router)",
+          "priority": "stack-specific"
+        },
+        {
+          "name": "Cookie",
+          "package": "storybook-addon-cookie",
+          "useCase": "Set document.cookie for stories",
+          "priority": "niche"
+        },
+        {
+          "name": "MirageJS",
+          "package": "storybook-mirage",
+          "useCase": "Mock entire backend with MirageJS",
+          "priority": "alternative"
+        },
+        {
+          "name": "walkerOS",
+          "package": "@walkeros/storybook-addon",
+          "useCase": "Visualize/debug event tracking",
+          "priority": "niche"
+        }
+      ]
+    },
+    "design": {
+      "url": "https://storybook.js.org/addons/tag/design",
+      "description": "Figma, design tokens, pixel-perfect, layout overlays",
+      "addons": [
+        {
+          "name": "Designs (official)",
+          "package": "@storybook/addon-designs",
+          "useCase": "Embed Figma frame in addon panel",
+          "official": true,
+          "priority": "essential"
+        },
+        {
+          "name": "Designs (community)",
+          "package": "storybook-addon-designs",
+          "useCase": "Embed Figma preview (older fork)",
+          "priority": "alternative"
+        },
+        {
+          "name": "Swatchbook",
+          "package": "@unpunnyfuns/swatchbook-addon",
+          "useCase": "Show DTCG design tokens",
+          "priority": "stack-specific"
+        },
+        {
+          "name": "Design token tables",
+          "package": "@etchteam/storybook-addon-design-token-tables",
+          "useCase": "Render design token tables in docs",
+          "priority": "common"
+        },
+        {
+          "name": "CSS Custom Properties",
+          "package": "@ljcl/storybook-addon-cssprops",
+          "useCase": "Manipulate CSS custom props live",
+          "priority": "common"
+        },
+        {
+          "name": "Measure",
+          "package": "@junk-temporary-prototypes/addon-measure",
+          "useCase": "Inspect CSS box model (in Essentials in v8+)",
+          "priority": "common"
+        },
+        {
+          "name": "Column Guides",
+          "package": "storybook-addon-grid",
+          "useCase": "Column grid overlay",
+          "priority": "common"
+        },
+        {
+          "name": "Breakpoints",
+          "package": "storybook-addon-breakpoints",
+          "useCase": "Show breakpoint sizes + name mappings",
+          "priority": "common"
+        },
+        {
+          "name": "Pixel Perfect",
+          "package": "@lagosta/pixel-perfect-storybook-addon",
+          "useCase": "Overlay Figma image for pixel-perfect comparison",
+          "priority": "niche"
+        },
+        {
+          "name": "Resizr",
+          "package": "@liip/storybook-addon-resizr",
+          "useCase": "Resize iframe with draggable handles",
+          "priority": "niche"
+        },
+        {
+          "name": "Color picker",
+          "package": "storybook-color-picker",
+          "useCase": "Select colors from palette, copy to clipboard",
+          "priority": "niche"
+        },
+        {
+          "name": "CSS Variables Theme",
+          "package": "@etchteam/storybook-addon-css-variables-theme",
+          "useCase": "Switch CSS files to change themes",
+          "priority": "stack-specific"
+        },
+        {
+          "name": "Tailwind Autodocs",
+          "package": "storybook-addon-tailwind-autodocs",
+          "useCase": "Auto-generate docs from tailwind.config",
+          "priority": "stack-specific"
+        },
+        {
+          "name": "Zeplin",
+          "package": "storybook-zeplin",
+          "useCase": "Embed Zeplin design previews",
+          "priority": "stack-specific"
+        },
+        {
+          "name": "Styling",
+          "package": "@storybook/addon-styling",
+          "useCase": "Configure popular styling tools (Tailwind, Emotion, etc.)",
+          "official": true,
+          "priority": "common"
+        },
+        {
+          "name": "UI Review",
+          "package": "@uicopilot/storybook-addon",
+          "useCase": "AI-powered Figma diff for components",
+          "priority": "commercial"
+        },
+        {
+          "name": "Design assets",
+          "package": "@storybook/addon-design-assets",
+          "useCase": "Show static design asset previews",
+          "official": true,
+          "priority": "common"
+        },
+        {
+          "name": "Playroom",
+          "package": "storybook-addon-playroom",
+          "useCase": "Design with Playroom using story source",
+          "priority": "niche"
+        }
+      ]
+    },
+    "appearance": {
+      "url": "https://storybook.js.org/addons/tag/appearance",
+      "description": "Themes, dark mode, highlights, viewports",
+      "addons": [
+        {
+          "name": "Highlight (official)",
+          "package": "@storybook/addon-highlight",
+          "useCase": "Highlight DOM nodes within stories (in Essentials v8+)",
+          "official": true,
+          "priority": "essential"
+        },
+        {
+          "name": "storybook-dark-mode",
+          "package": "storybook-dark-mode",
+          "useCase": "Toggle dark/light mode",
+          "priority": "essential"
+        },
+        {
+          "name": "Tailwind dark mode",
+          "package": "storybook-addon-tailwindcss-dark-mode",
+          "useCase": "Tailwind-specific dark mode toggle",
+          "priority": "stack-specific"
+        },
+        {
+          "name": "Permutation",
+          "package": "storybook-addon-permutation",
+          "useCase": "Render component variants as a table",
+          "priority": "common"
+        },
+        {
+          "name": "Applitools Eyes",
+          "package": "@applitools/eyes-storybook-addon",
+          "useCase": "Visual AI regression testing (commercial)",
+          "priority": "commercial"
+        },
+        {
+          "name": "iFrame",
+          "package": "storybook-addon-iframe",
+          "useCase": "Embed iframe inside a story",
+          "priority": "niche"
+        },
+        {
+          "name": "Pixel Perfect",
+          "package": "storybook-addon-pixel-perfect",
+          "useCase": "Overlay reference image",
+          "priority": "niche"
+        },
+        {
+          "name": "Facelift",
+          "package": "storybook-facelift",
+          "useCase": "Themes + providers + true dark mode",
+          "priority": "alternative"
+        },
+        {
+          "name": "Outline",
+          "package": "storybook-addon-outline",
+          "useCase": "Display CSS outlines for debugging layout",
+          "priority": "common"
+        }
+      ]
+    },
+    "organize": {
+      "url": "https://storybook.js.org/addons/tag/organize",
+      "description": "Docs, navigation, sidebar metadata",
+      "addons": [
+        {
+          "name": "Docs (official)",
+          "package": "@storybook/addon-docs",
+          "useCase": "Auto-generate component docs (in Essentials)",
+          "official": true,
+          "priority": "essential"
+        },
+        {
+          "name": "Links (official)",
+          "package": "@storybook/addon-links",
+          "useCase": "Link stories together for demos",
+          "official": true,
+          "priority": "common"
+        },
+        {
+          "name": "Tag Badges",
+          "package": "storybook-addon-tag-badges",
+          "useCase": "Display Storybook tags as sidebar badges",
+          "priority": "common"
+        },
+        {
+          "name": "Status",
+          "package": "@etchteam/storybook-addon-status",
+          "useCase": "Component status (draft/stable/deprecated)",
+          "priority": "common"
+        },
+        {
+          "name": "Badges",
+          "package": "storybook-addon-badges",
+          "useCase": "Add badges to stories",
+          "priority": "common"
+        },
+        {
+          "name": "VS Code source",
+          "package": "storybook-vscode-component",
+          "useCase": "Open component source in VS Code",
+          "priority": "niche"
+        },
+        {
+          "name": "Table of contents",
+          "package": "storybook-docs-toc",
+          "useCase": "TOC for MDX docs",
+          "priority": "common"
+        },
+        {
+          "name": "Branch switcher",
+          "package": "storybook-branch-switcher",
+          "useCase": "Switch git branches in Storybook UI",
+          "priority": "niche"
+        },
+        {
+          "name": "Text Search",
+          "package": "@tchwrks/storybook-text-search",
+          "useCase": "Full-text search through MDX",
+          "priority": "niche"
+        },
+        {
+          "name": "Component dependency tree",
+          "package": "storybook-addon-dependencies",
+          "useCase": "Browse interactive dep tree of stories",
+          "priority": "niche"
+        },
+        {
+          "name": "Markdown docs",
+          "package": "storybook-addon-markdown-docs",
+          "useCase": "Write documentation in markdown",
+          "priority": "alternative"
+        }
+      ]
+    },
+    "essentials": {
+      "url": "https://storybook.js.org/addons/tag/essentials",
+      "description": "The bundled official addons",
+      "notes": "In Storybook 8+, @storybook/addon-essentials bundles: addon-docs, addon-controls, addon-actions, addon-viewport, addon-backgrounds, addon-toolbars, addon-measure, addon-outline, addon-highlight. In Storybook 9, these are folded into core. Don't install separately unless on v7 or earlier.",
+      "addons": [
+        {
+          "name": "Essentials bundle",
+          "package": "@storybook/addon-essentials",
+          "useCase": "Default-on bundle of docs/controls/actions/viewport/backgrounds/toolbars/measure/outline/highlight",
+          "official": true,
+          "priority": "essential",
+          "stocAreas": ["docs", "controls", "actions", "viewport", "backgrounds", "toolbars", "measure", "outline", "highlight"]
+        },
+        {
+          "name": "Docs (standalone)",
+          "package": "@storybook/addon-docs",
+          "useCase": "MDX + autogenerated docs (already in essentials)",
+          "official": true,
+          "priority": "essential"
+        }
+      ]
+    }
+  },
+  "decisionMatrix": {
+    "everyProject": ["msw-storybook-addon", "@storybook/addon-essentials"],
+    "ifFigma": ["@storybook/addon-designs"],
+    "ifTailwind": ["@storybook/addon-styling", "storybook-addon-tailwind-autodocs"],
+    "ifDarkLightTheme": ["storybook-dark-mode"],
+    "ifMultipleStatuses": ["storybook-addon-tag-badges", "@etchteam/storybook-addon-status"],
+    "ifVisualRegressionNeeded": ["Chromatic (paid)", "@applitools/eyes-storybook-addon (paid)"],
+    "ifGraphQL": ["storybook-addon-apollo-client OR @urql/storybook-addon"],
+    "ifNextJs": ["storybook-addon-next-router"],
+    "ifReactRouterV6": ["custom MemoryRouter decorator (see mock-infrastructure.md)"],
+    "ifReactRouterV7": ["storybook-addon-remix-react-router OR custom createMemoryRouter"]
+  }
+}

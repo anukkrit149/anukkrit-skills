@@ -1,0 +1,9 @@
+{
+  "name": "anukkrit-skills-cloud",
+  "version": "1.0.0",
+  "description": "Full skill library (105 skills) for Claude Code cloud sandbox — coding, agents, frameworks, design, prompt engineering, and workflow automation.",
+  "author": {
+    "name": "Anukkrit",
+    "email": "anukkrit.official@gmail.com"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "anukkrit-skills",
+  "owner": {
+    "name": "Anukkrit",
+    "email": "anukkrit.official@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "anukkrit-skills-cowork",
+      "source": "./cowork",
+      "description": "Curated 50-skill bundle for Cowork: document work, research, planning, prompt engineering, data tasks."
+    },
+    {
+      "name": "anukkrit-skills-cloud",
+      "source": "./cloud",
+      "description": "Full 105-skill library for Claude Code cloud sandbox: coding, agents, LangChain/LangGraph, Storybook, Vercel, plus everything in cowork."
+    }
+  ]
+}
